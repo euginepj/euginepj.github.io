@@ -1,0 +1,35 @@
+body { 
+   font-family: 'Lora', serif;
+   background: #f8f8f8;
+   font-size: 16px; 
+   line-height: 1.45;
+}
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 { 
+   font-family: 'Work Sans', sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   color: #212121;
+   font-size: 2.441em;
+}
+h2, .h2 { font-size: 1.953em;} 
+h3, .h3 { font-size: 1.563em;}
+h4, .h4 { font-size: 1.25em;}
+h5, .h5 { font-size: 1.10em;}
+
+hr { border-top: 1px solid rgba(0,0,0,.8) } 
+.underline { border-bottom: #212121 5px solid; padding-bottom: 5px; }
+.underline-slim { border-bottom-width: 2px; }
+p.underline { padding-bottom: 15px; }
+ul li a { color: #222 }
+ul li a:hover { color: #000 }
+.card { box-shadow: none; border-radius: 2px; background: none; border: 1px solid rgba(5,5,5,.4); }
+.table th { font-weight: bolder; } 
+table.table td, table.table th { padding: 0.3em; }
+
+#skills .list-group .list-group-item { display: flex; align-items: center; background: none; border: 1px solid rgba(5,5,5,.4); background: rgba(255,255,255,0.4); padding: .5rem 1.25rem; }
+#skills .list-group .list-group-item span { color: #333; font-weight: bolder; font-size: 16px; margin-left: 10px; }
+#skills .list-group .list-group-item .devicon { font-size: 40px; }
+
+.simplefilter .list-inline-item { border-color: rgba(5,5,5,.4); border-style: solid; border-width: 1px; border-left: none; margin: 0; padding: 2px 5px; cursor: pointer }
+.simplefilter .list-inline-item:first-child { border-left: rgba(5,5,5,.4) solid 1px; border-top-left-radius: 3px; border-bottom-left-radius: 3px }
+.simplefilter .list-inline-item:last-child { border-top-right-radius: 3px; border-bottom-right-radius: 3px }

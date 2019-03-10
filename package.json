@@ -1,0 +1,19 @@
+{
+  "name": "pje",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "filterizr": "^1.3.5",
+    "mdbootstrap": "^4.7.3",
+    "wowjs": "^1.1.3"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
