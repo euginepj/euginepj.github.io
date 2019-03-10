@@ -313,5 +313,56 @@
             </div>
          </section>
       </main>
+      
+      <footer>
+
+      </footer>
+      <!-- SCRIPTS -->
+      <!-- JQuery -->
+      <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery-3.3.1.min.js"></script>
+      <!-- Bootstrap tooltips -->
+      <script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
+      <!-- Bootstrap core JavaScript -->
+      <script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+      <!-- MDB core JavaScript -->
+      <script type="text/javascript" src="node_modules/filterizr/dist/jquery.filterizr.min.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+
+      <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function () {
+            // Default options
+            var options = {
+               animationDuration: 0.5, // in seconds
+               filter: 'all', // Initial filter
+               callbacks: {
+                  onFilteringStart: function () { },
+                  onFilteringEnd: function () { },
+                  onShufflingStart: function () { },
+                  onShufflingEnd: function () { },
+                  onSortingStart: function () { },
+                  onSortingEnd: function () { }
+               },
+               controlsSelector: '', // Selector for custom controls
+               delay: 0, // Transition delay in ms
+               delayMode: 'progressive', // 'progressive' or 'alternate'
+               easing: 'ease-out',
+               filterOutCss: {// Filtering out animation
+                  opacity: 0,
+                  transform: 'scale(0.5)'
+               },
+               filterInCss: {// Filtering in animation
+                  opacity: 0,
+                  transform: 'scale(1)'
+               },
+               layout: 'sameWidth', // See layouts
+               multifilterLogicalOperator: 'or',
+               selector: '.filtr-container',
+               setupControls: true // Should be false if controlsSelector is set 
+            }
+            var filterizd = $('.filtr-container').filterizr(options);
+         });
+      </script>
    </body>
 </html>
