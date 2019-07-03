@@ -419,7 +419,7 @@ $person = (object) [
 
       <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
       <script type="text/javascript">
-         $(document).ready(function () {
+         $(window).on('load', function () {
             // Default options
             var options = {
                animationDuration: 0.5, // in seconds
