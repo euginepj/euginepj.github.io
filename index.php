@@ -10,6 +10,7 @@ $person = (object) [
                 'ln' => 'https://www.linkedin.com/in/eugine-p-j-67ab6719/',
                 'tw' => 'https://twitter.com/euginepj',
                 'git' => 'https://github.com/euginepj',
+                'so' => 'https://stackoverflow.com/users/1587049/eugine-joseph', 
             ]
         ]
 ?><!DOCTYPE html>
@@ -69,6 +70,11 @@ $person = (object) [
                               <li class="list-inline-item">
                                  <a target="_blank" href="<?= $person->social['git'] ?>">
                                     <i class="fab fa-2x fa-github-square"></i>
+                                 </a>
+                              </li>
+                              <li class="list-inline-item">
+                                 <a target="_blank" href="<?= $person->social['so'] ?>">
+                                    <i class="fab fa-2x fa-stack-overflow"></i>
                                  </a>
                               </li>
                            </ul>
