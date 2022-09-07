@@ -9,7 +9,7 @@ $person = (object) [
                 'fb' => 'https://www.facebook.com/eugine.joseph.5',
                 'ln' => 'https://www.linkedin.com/in/eugine-p-j-67ab6719/',
                 'tw' => 'https://twitter.com/euginepj',
-                'git' => 'https://bitbucket.org/eugine_falcon/profile/repositories',
+                'git' => 'https://github.com/euginepj',
             ]
         ]
 ?><!DOCTYPE html>
@@ -52,22 +52,22 @@ $person = (object) [
                         <div class="text-center">
                            <ul class="list-inline mb-0">
                               <li class="list-inline-item">
-                                 <a target="_blank" href="#">
+                                 <a target="_blank" href="<?= $person->social['fb'] ?>">
                                     <i class="fab fa-2x fa-facebook"></i>
                                  </a>
                               </li>
                               <li class="list-inline-item">
-                                 <a target="_blank" href="#">
+                                 <a target="_blank" href="<?= $person->social['ln'] ?>">
                                     <i class="fab fa-2x fa-linkedin"></i>
                                  </a>
                               </li>
                               <li class="list-inline-item">
-                                 <a target="_blank" href="#">
+                                 <a target="_blank" href="<?= $person->social['tw'] ?>">
                                     <i class="fab fa-2x fa-twitter-square"></i>
                                  </a>
                               </li>
                               <li class="list-inline-item">
-                                 <a target="_blank" href="#">
+                                 <a target="_blank" href="<?= $person->social['git'] ?>">
                                     <i class="fab fa-2x fa-github-square"></i>
                                  </a>
                               </li>
@@ -412,9 +412,7 @@ $person = (object) [
             </div>
          </section>
       </main>
-
       <footer>
-
       </footer>
 
       <!-- SCRIPTS -->
