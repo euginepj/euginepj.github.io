@@ -87,16 +87,16 @@ $person = (object) [
                            </div>
                            <div class="col-12">
                               <ul class="list-group">
-                                 <li class="list-group-item"><strong>Name</strong>
+                                 <li class="list-group-item px-0"><b class="col-5">Name</b>
                                     <a class="LI-simple-link" href='https://ae.linkedin.com/in/eugine-p-j-67ab6719?trk=profile-badge'>Eugine Joseph</a></li>
-                                 <li class="list-group-item"><strong>Birthday</strong> 23 December 1987</li>
-                                 <li class="list-group-item"><strong>Gender</strong> Male</li>
-                                 <li class="list-group-item"><strong>Nationality</strong> Indian</li>
-                                 <li class="list-group-item"><strong>Visa Type</strong> Work Visa(UAE)</li>
-                                 <li class="list-group-item"><strong>Driving License</strong> Yes. (Manual)</li>
-                                 <li class="list-group-item"><strong>Languages</strong> 
+                                 <li class="list-group-item px-0"><b class="col-5">Birthday</b> 23 December 1987</li>
+                                 <li class="list-group-item px-0"><b class="col-5">Gender</b> Male</li>
+                                 <li class="list-group-item px-0"><b class="col-5">Nationality</b> Indian</li>
+                                 <li class="list-group-item px-0"><b class="col-5">Visa Type</b> Work Visa(UAE)</li>
+                                 <li class="list-group-item px-0"><b class="col-5">Driving License</b> Yes. (Manual)</li>
+                                 <li class="list-group-item px-0"><b class="col-5">Languages </b> 
                                     English, Malayalam, Tamil(Speak)</li>
-                                 <li class="list-group-item"><strong>Hobbies</strong> 
+                                 <li class="list-group-item px-0"><b class="col-5">Hobbies </b> 
                                     Photography, Sudoku, Chess, Reading and Browsing</li>
                               </ul>
                            </div>
@@ -121,14 +121,6 @@ $person = (object) [
                                     <span>Laravel</span>
                                  </li>
                                  <li class="list-group-item">
-                                    <i class="devicon devicon-php-plain colored"></i>
-                                    <span>PHP</span>
-                                 </li>
-                                 <li class="list-group-item">
-                                    <i class="devicon devicon-mysql-plain colored"></i>
-                                    <span>MySql</span>
-                                 </li>
-                                 <li class="list-group-item">
                                     <i class="devicon devicon-codeigniter-plain colored"></i>
                                     <span>CodeIgniter</span>
                                  </li>
@@ -145,6 +137,10 @@ $person = (object) [
                                     <span>WordPress</span>
                                  </li>
                                  <li class="list-group-item">
+                                    <i class="devicon devicon-drupal-plain colored"></i>
+                                    <span>Drupal</span>
+                                 </li>
+                                 <li class="list-group-item">
                                     <i class="devicon devicon-bootstrap-plain colored"></i>
                                     <span>Bootstrap</span>
                                  </li>
@@ -159,6 +155,18 @@ $person = (object) [
                                  <li class="list-group-item">
                                     <i class="devicon devicon-jquery-plain colored"></i>
                                     <span>jQuery</span>
+                                 </li>
+                                 <li class="list-group-item">
+                                    <i class="devicon devicon-mysql-plain colored"></i>
+                                    <span>MySql</span>
+                                 </li>
+                                 <li class="list-group-item">
+                                    <i class="devicon devicon-nodejs-plain colored"></i>
+                                    <span>NodeJs</span>
+                                 </li>
+                                 <li class="list-group-item">
+                                    <i class="devicon devicon-github-plain colored"></i>
+                                    <span>Github</span>
                                  </li>
                               </ul>
                            </div>
@@ -411,7 +419,7 @@ $person = (object) [
 
       <!-- SCRIPTS -->
       <!-- JQuery -->
-      <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery-3.3.1.min.js"></script>
+      <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
       <!-- Bootstrap tooltips -->
       <script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
       <!-- Bootstrap core JavaScript -->
