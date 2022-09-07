@@ -117,6 +117,10 @@ $person = (object) [
                            <div class="col-12">
                               <ul class="list-group mt-2">
                                  <li class="list-group-item">
+                                    <i class="devicon devicon-laravel-plain colored"></i>
+                                    <span>Laravel</span>
+                                 </li>
+                                 <li class="list-group-item">
                                     <i class="devicon devicon-php-plain colored"></i>
                                     <span>PHP</span>
                                  </li>
