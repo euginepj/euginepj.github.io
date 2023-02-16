@@ -220,7 +220,7 @@ $person = (object) [
                                          'name' => 'Alco',
                                          'img' => 'img-alco.png',
                                          'cat' => 'bt',
-                                         'href' => 'http://alco-plant-hire.com/'
+                                         'href' => 'https://web.archive.org/web/20220407220859/http://www.alco-plant-hire.com/index.php'
                                      ], [
                                          'name' => 'Panworld',
                                          'img' => 'img-panworld.png',
@@ -235,7 +235,7 @@ $person = (object) [
                                          'name' => 'Registration',
                                          'img' => 'img-registration.png',
                                          'cat' => 'bt, ci',
-                                         'href' => 'http://registration.falconcity.com'
+                                         'href' => '#'
                                      ], [
                                          'name' => 'Nursery',
                                          'img' => 'img-nursery.png',
@@ -250,12 +250,12 @@ $person = (object) [
                                          'name' => 'Falconcity Markets',
                                          'img' => 'img-markets-1.png',
                                          'cat' => 'bt, php',
-                                         'href' => 'http://falconcitymarkets.ae/'
+                                         'href' => 'http://falconcitymarkets.ae/sample-1'
                                      ], [
                                          'name' => 'A and A Cargo',
                                          'img' => 'img-aandacargo.png',
                                          'cat' => 'bt, php',
-                                         'href' => 'http://aandacargo.com'
+                                         'href' => '#'
                                      ], [
                                          'name' => 'AOAMS',
                                          'img' => 'img-aoams.png',
