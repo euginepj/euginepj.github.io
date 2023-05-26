@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.111.3">
+    <title>Sunny Wellness Template</title>
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body class="d-flex h-100 text-center text-bg-dark">
+ 
+    <div class="background-video">
+      <!-- The HTML5 video element that will create the background video on the header -->
+      <video id="video" playsinline="playsinline" autoplay="autoplay" muted loop="loop">
+        <source src="assets/Mykonos-1.mp4" type="video/mp4">
+      </video>
+    </div>
+    
+
+    <div class="content-details cover-container-fluid d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="my-auto">
+        <p></p>
+      </header>
+
+      <main class="px-3">
+        <div class="row">
+          <div class="col-8 mx-auto"> 
+            <h1>Sunny Wellness.</h1>
+            
+          </div>
+        </div>
+      </main>
+
+      <footer class="my-auto text-white-50">
+        <button id="mute" class="round-button btn btn-link link-dark border-0 link-underline-opacity-0 text-white">
+          <span class="fw-semibold">tap for music</span><br /> 
+          <i class="fa-regular fa-circle-play fa-xl" style="font-size: 20px;"></i>
+        </button>
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      var button = document.getElementById('mute');
+      var video = document.getElementById('video');
+    button.onclick = function (){
+      if (video.muted == false) {    
+            video.muted = true;
+      } else {
+          video.muted = false;
+      }
+    };
+    </script>
+  </body>
+</html>
