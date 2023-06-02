@@ -59,7 +59,7 @@
       $('.sound').on('click', function() {
         var video = document.getElementById('video');
         if (video.muted === false) { 
-          video.muted = true; 
+          video.muted = !video.muted;
           video.play(); 
           $('.btn-unmute').removeClass('d-none'); 
           $('.btn-mute').addClass('d-none'); 
