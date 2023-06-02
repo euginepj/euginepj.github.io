@@ -1,0 +1,36 @@
+* {
+   font-family: 'Tajawal', sans-serif;
+}
+.slow_1 {
+   animation-duration: 2s
+}
+.slow_2 {
+   animation-duration: 4s
+}
+.slow_3 {
+   animation-duration: 6s
+}
+.slow_4 {
+   animation-duration: 8s
+}
+.slow_5 {
+   animation-duration: 10s
+}
+.delay_1 {
+   animation-delay: 2s;
+}
+.delay_2 {
+   animation-delay: 4s
+}
+.delay_3 {
+   animation-delay: 6s
+}
+.delay_4 {
+   animation-delay: 8s
+}
+.delay_5 {
+   animation-delay: 10s
+}
+.sound-icon {
+   max-height: 60px;
+}

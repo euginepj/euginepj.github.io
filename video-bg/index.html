@@ -9,49 +9,64 @@
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/cover.css" >
+    <link rel="stylesheet" href="assets/css/style.css" >
   </head>
   <body class="d-flex h-100 text-center text-bg-dark">
-    
+ 
     <div class="background-video">
       <!-- The HTML5 video element that will create the background video on the header -->
       <video id="video" playsinline="playsinline" autoplay="autoplay" muted loop="loop">
-        <source src="assets/Mykonos-1.mp4" type="video/mp4">
+        <source src="assets/video/background-01.mp4" type="video/mp4">
       </video>
-    </div>
+    </div>    
 
     <div class="content-details cover-container-fluid d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="my-auto">
-        <p></p>
+      <header class="my-auto mb-0">
       </header>
 
       <main class="px-3">
         <div class="row">
           <div class="col-8 mx-auto"> 
-            <h1 class="d-none">Sunny Wellness</h1>
+            <img src="assets/images/SW-Logo.png" class="img-fluid animate__animated animate__fadeIn slow_2 delay_1" style="max-height: 150px;" /> 
           </div>
         </div>
       </main>
 
-      <footer class="my-auto text-white-50">
-        <button id="mute" class="round-button btn btn-link link-dark border-0 link-underline-opacity-0 text-white">
-          <span class="fw-semibold">tap for music</span><br /> 
-          <i class="fa-regular fa-circle-play fa-xl" style="font-size: 20px;"></i>
+      <footer class="my-auto my-auto text-white-75">
+        <div class="para mb-3">
+          <p class="mb-1 animate__animated animate__fadeInUp slow_3 delay_1">حياتك ستتغير قريبا ... نحن قادمون!</p>
+          <p class="animate__animated animate__fadeInUp slow_3 delay_2">Your life is going to change soon... We are coming! </p> 
+        </div>
+        <button id="mute" class="round-button btn btn-link link-dark border-0 link-underline-opacity-0 text-white sound 
+        animate__animated animate__fadeInUp slow_4 delay_2">
+          <img src="assets/images/Unmute.png" class="sound-icon btn-unmute" /> 
+          <img src="assets/images/Mute.png" class="d-none sound-icon btn-mute" /> 
         </button>
       </footer>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-      var button = document.getElementById('mute');
+      var button = document.getElementById('sound');
       var video = document.getElementById('video');
-    button.onclick = function (){
-      if (video.muted == false) {    
-            video.muted = true;
-      } else {
+      
+      $('.sound').on('click', function() {
+        if (video.muted == false) { 
+          video.muted = true; 
+          $('.btn-unmute').removeClass('d-none'); 
+          $('.btn-mute').addClass('d-none'); 
+        } else {
           video.muted = false;
-      }
-    };
+          $('.btn-unmute').addClass('d-none'); 
+          $('.btn-mute').removeClass('d-none'); 
+        }
+      }); 
     </script>
   </body>
 </html>
