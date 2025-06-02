@@ -1,0 +1,223 @@
+@import "tailwindcss";
+@custom-variant dark (&:where([class~=dark], [class~=dark] *));
+
+#fancybox-thumbs ul li {
+    opacity: 1;
+}
+
+@layer base {
+  body {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    letter-spacing: 1px;
+    @apply text-lg font-normal dark:font-light text-stone-500;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply uppercase; 
+  }
+  b, strong { 
+    font-weight: 600;
+  }
+  body {
+    @apply bg-gradient-to-b from-stone-200 to-stone-100 dark:from-sky-900 dark:to-gray-950 text-stone-800 dark:text-gray-100;
+  }
+  .container-fluid {
+    @apply mx-auto p-5;
+  }
+
+  .switch-theme {
+    @apply flex absolute right-20 bg-gray-800 dark:bg-gray-100 rounded-b-xl p-1 px-3 cursor-pointer z-10;
+  }
+  .theme-sun {
+    @apply dark:block hidden dark:text-gray-800;
+  }
+  .theme-moon {
+    @apply dark:hidden block text-white;
+  }
+  .box-border h2 {
+    @apply text-4xl text-stone-800 dark:text-white px-6 pt-6 pb-4;
+  }
+
+  main {
+    @apply grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-1 gap-12;
+  }
+  main > aside {
+    @apply lg:col-span-1 flex flex-col gap-8;
+  }
+  main > section { 
+    @apply xl:col-span-3 lg:col-span-2 md:col-span-1; 
+  }
+  button.btn-toggle { 
+    @apply float-right grid lg:hidden items-center justify-items-center bg-stone-500/10 dark:bg-white/10 rounded-full w-8 h-8 pt-1 rotate-0
+      transition duration-500 ease-in-out cursor-pointer;
+  }
+  button.btn-toggle:hover {
+    @apply rotate-180 bg-stone-500/20 dark:bg-white/20; 
+  }
+
+  .profile { 
+    @apply grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1; 
+  }
+  .profile .avatar {
+    @apply rounded-lg rounded-e-none w-full;
+  }
+  .profile .profile-box {
+    @apply col-span-2 lg:col-span-1 ;  
+  }
+  .phone-btn, .email-btn {
+    @apply text-sm rounded-sm pt-3 px-4 pb-2 border border-gray-900/30 dark:border-white/30 text-stone-700 dark:text-white;
+  }
+  .box-border {
+    @apply rounded-lg bg-white dark:bg-gradient-to-tr dark:from-cyan-900 dark:to-sky-950 dark:border dark:border-stone-100/50 dark:backdrop-blur-sm;
+  }
+  .social-icons {
+    @apply flex gap-2 mt-4 flex-wrap ;
+  }
+  .social-icons > a {
+    @apply text-gray-900/80 dark:text-white;
+  }
+  .social-icons > a > .fa-stack {
+    @apply border border-gray-900/30 dark:border-white/30 rounded-sm;
+  }
+
+  .profile-details-panel h2, 
+  .technical-details-panel h2 { 
+    @apply max-md:text-2xl max-md:font-semibold; 
+  }
+  .profile-details-box, 
+  .technical-details-box { 
+    @apply transition duration-500 ease-in-out max-lg:h-0 overflow-hidden; 
+  }
+  .profile-details-box.show, 
+  .technical-details-box.show { 
+    @apply h-auto; 
+  }
+
+  .box-border .details-div {
+    @apply p-6;
+  }
+  .card-body {
+    @apply p-6;
+  }
+  
+  .main-heading { 
+    @apply text-6xl text-stone-800 dark:text-white px-0;
+  }
+  .box-border ul {
+    @apply flex flex-col gap-1;
+  }
+  .box-border ul li {
+    @apply list-none border-b border-stone-800/10 dark:border-white/15 py-3 px-5;
+  }
+  .box-border ul.tasks li { 
+    @apply px-0
+  }
+  .box-border ul li:first-child {
+    @apply border-t;
+  }
+  .box-border ul li:last-child {
+    @apply border-b-0 pb-6;
+  }
+  .box-border ul.tasks li ul {
+    @apply mt-2;
+  }
+  .box-border ul.tasks li ul li {
+    @apply list-none ms-7 ps-0 border-none py-1;
+  }
+  .box-border ul.tasks li ul li:before {
+    content: "\f061";
+    font-family: "FontAwesome";
+    font-size: 13px;
+    @apply text-stone-400 dark:text-white -ms-5 me-2;
+  }
+
+  .box-border ul li b {
+  }
+  .box-border ul li span {
+    @apply inline-block;
+  }
+
+  .works-div { 
+    @apply  grid grid-cols-1 gap-8;
+  }
+  .simplefilter {
+    @apply flex gap-1 flex-wrap;
+  }
+  .simplefilter li {
+    @apply rounded-full px-4 pt-2 pb-1 text-sm font-semibold uppercase;
+  }
+  .simplefilter li:first-child {
+    @apply ps-0;
+  }
+  .simplefilter .label {
+    @apply uppercase font-semibold;
+  }
+  .simplefilter .fltr-controls {
+    @apply border border-gray-900/30 dark:border-white/30 cursor-pointer;
+  }
+  .simplefilter .fltr-controls.active {
+    @apply text-white dark:text-gray-950 bg-stone-800 dark:bg-white;
+  }
+
+  .works-panel { 
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8; 
+  }
+  .works-panel article { 
+    @apply rounded-xl overflow-hidden bg-white dark:bg-sky-950 shadow-lg transition duration-500 ease-in-out opacity-95 scale-[99%] dark:scale-[98%];  
+  }
+  .works-panel article img { 
+    @apply opacity-100 transition duration-500 ease-in-out;
+  }
+  .works-panel article .card-body  {
+    @apply p-5 pb-4;
+  }
+  .works-panel article h3 { 
+    @apply flex flex-wrap justify-between;
+  }
+  .works-panel article h3 span {
+    @apply text-2xl uppercase text-stone-800 dark:text-white;
+  }
+  .works-panel article h3 a { 
+    @apply rounded-md border border-gray-900/30 dark:border-white/30 pt-2 pb-2 ps-3 pe-2 font-semibold float-right text-xs uppercase; 
+  }
+
+  .experience-panel { 
+    @apply grid grid-cols-1 gap-8 mt-12; 
+  }
+  .list-experiences {
+    @apply relative ms-5;
+  } 
+  .list-experiences li.group { 
+    @apply relative ms-0 ps-10 pb-10 max-w-3xl border-s border-gray-400 dark:border-gray-300
+  }
+  .list-experiences li.group span { 
+    @apply absolute flex items-center justify-center w-10 h-10 p-2 shadow-md rounded-full -start-5 transition duration-500 ease-in-out bg-white; 
+  }
+  .list-experiences li span svg { 
+    @apply w-4 h-4 text-gray-500 dark:text-sky-950;   
+  }
+  .list-experiences li .card {
+    @apply rounded-xl overflow-hidden bg-white dark:bg-sky-950 shadow-lg p-8 grid gap-2 transition duration-500 ease-in-out opacity-95 scale-[99%] dark:scale-[98%];
+
+  }
+  .list-experiences li .card h3 { 
+    @apply text-4xl font-light;
+    @apply text-white;
+  }
+  .list-experiences li .card h4 {
+    @apply text-2xl text-stone-800 dark:text-white; 
+  }
+  .list-experiences li .card h4 time { 
+    @apply mb-2 text-lg text-gray-400 dark:text-sky-100; 
+  }
+
+
+
+  main > footer {
+    @apply bg-gradient-to-b from-stone-200 to-stone-300 py-10 dark:from-blue-950 dark:to-sky-950;
+  }
+}
