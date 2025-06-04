@@ -19,7 +19,6 @@
       <link
          href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Raleway:ital,wght@0,100..900;1,100..900&amp;family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap"
          rel="stylesheet">
-
    </head>
 
    <body class>
@@ -721,18 +720,18 @@
             contentClick: "toggleCover",
             Images: {
                 Panzoom: {
-      maxScale: 2,
+                  maxScale: 2,
                 },
             },
             Thumbs: {
                 type: "classic",
             },
             Toolbar: {
-                display: {
-                    left: [],
-                    middle: ["prev", "infobar", "next"],
-                    right: ["close"],
-                },
+               display: {
+                  left: [],
+                  middle: ["prev", "infobar", "next"],
+                  right: ["close"],
+               },
             },
         }; 
         Fancybox.bind('[data-fancybox]', options);
@@ -775,6 +774,7 @@
                 $('.profile-details-box').addClass('show');
             }
         });
+
         $('.technical-details-panel .btn-toggle').on('click', function() {
             if ($('.technical-details-box').hasClass('show')) {
                 $('.technical-details-box').removeClass('show');
