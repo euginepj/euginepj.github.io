@@ -44,7 +44,11 @@
             <div class="profile box-border shadow-lg">
                 <img src="https://avatars0.githubusercontent.com/u/5563836?s=400&v=4" alt="avatar" class="avatar ">
                 <div class="profile-box">
-                    <h2 class="">Eugine Joseph</h2>
+                    <h2 class="flex " style="justify-content: space-between;">
+                        <div>Eugine Joseph</div>
+                        <a href="Full-Stack-Developer-Eugine-Joseph-2025-1.pdf"><i class="fa-solid fa-xs fa-download"></i></a>
+                    </h2>
+                    
                     <div class="details-div rounded-b-xl pt-0 ">
                         <p class="text-lg mb-3">A self-motivated Web Developer (PHP) with strong knowledge in Responsive Web Designing.</p>
                         <div class="flex flex-row lg:flex-col 2xl:flex-row my-2 gap-x-3 gap-y-2">
