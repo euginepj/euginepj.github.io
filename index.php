@@ -160,7 +160,7 @@
                             "name" => "Promotion Pages",
                             "img" => "promotions-img-1.webp",
                             "cat" => "tw, la",
-                            "href" => "https://centralpacificone.com/", 
+                            "href" => "https://promotions.leosdevelopments.com/knightsbridge-brown/", 
                             "other_imgs" => [
                                 'promotions-img-1.webp'
                             ]
