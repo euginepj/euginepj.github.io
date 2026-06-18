@@ -85,9 +85,9 @@ $works = [
 $companies = [
     [
         'title' => 'Senior Full Stack Developer',
-        'name' => 'CloudTech, Dubai',
+        'name' => 'CloudTech Nexus, Dubai',
         'time' => 'Mar 2026 — Present',
-        'logo_url' => 'https://cdn.svgporn.com/logos/google-cloud.svg',
+        'logo_url' => 'https://cloudtechnexus.ae/storage/CloudTech_Logo.png',
         'tasks' => [
             "Architecting and optimizing enterprise cloud application portals using Laravel and high-performance relational databases.",
             "Structuring secure API endpoints, integrating third-party operational frameworks, and optimizing runtime execution latencies.",
@@ -98,7 +98,7 @@ $companies = [
         'title' => 'Senior Full Stack Web Developer & SEO Specialist',
         'name' => 'LEOS International Group, Dubai',
         'time' => 'Jul 2024 — Feb 2026',
-        'logo_url' => 'https://cdn.svgporn.com/logos/laravel.svg',
+        'logo_url' => 'https://dubai-immo.com/wp-content/uploads/2023/04/leos-dubai-logo.jpeg',
         'tasks' => [
             "Optimized and customized a website to win the <b>'Best Developer Website' Award</b> at the <i>Dubai Property Awards 2024–2025</i>.",
             "Boosted <b>Google PageSpeed score to 95+</b> through performance optimizations, database tuning, and asset compression.",
@@ -111,7 +111,7 @@ $companies = [
         'title' => 'Full Stack Developer',
         'name' => 'Falconcity of Wonders, Dubai',
         'time' => 'Jan 2018 — Dec 2023',
-        'logo_url' => 'https://cdn.svgporn.com/logos/wordpress-icon.svg',
+        'logo_url' => 'https://falconcity.com/wp-content/uploads/2020/01/falcon-logo-web-retina.png',
         'tasks' => [
             "Developed <b>SEO-optimized corporate websites</b> with on-page best practices to maximize organic reach.",
             "Built custom in-house applications using <b>Laravel</b>: HRMS, Document Management, IT Management, DocSign, Tax Allocation, Archive System.",
@@ -124,7 +124,7 @@ $companies = [
         'title' => 'Full Stack Developer',
         'name' => 'Menora Software, India',
         'time' => 'Feb 2017 — Dec 2017',
-        'logo_url' => 'https://cdn.svgporn.com/logos/zend.svg',
+        'logo_url' => 'https://www.menora.co.uk/wp-content/themes/menora/assets/images/menora-logo.png',
         'tasks' => [
             "Successfully developed a <b>cloud-based CRM system using Zend Framework</b>, streamlining core business operations.",
             "Performed code reviews, debugged complex issues, and optimized legacy code for speed and security.",
@@ -727,7 +727,7 @@ $companies = [
             display: flex;
             gap: 3rem;
             width: max-content;
-            animation: marquee 22s linear infinite;
+            animation: marquee 33s linear infinite;
         }
 
         .marquee-container:hover .marquee-track {
@@ -747,18 +747,22 @@ $companies = [
         .marquee-logo-card {
             background: var(--bg-surface);
             border: 1px solid var(--border-muted);
-            padding: 1.5rem 2.5rem;
+            padding: 1.5rem 2rem;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            gap: 1.25rem;
+            justify-content: center;
+            gap: 0.75rem;
             font-family: 'Outfit', sans-serif;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             font-weight: 700;
             letter-spacing: 0.05em;
             text-transform: uppercase;
             color: var(--text-secondary);
             transition: var(--transition-smooth);
             user-select: none;
+            min-width: 200px;
+            text-align: center;
         }
 
         .marquee-logo-card:hover {
@@ -768,8 +772,10 @@ $companies = [
         }
 
         .marquee-logo-card img {
-            height: 24px;
+            height: 32px;
+            max-width: 150px;
             width: auto;
+            object-fit: contain;
             filter: grayscale(1) brightness(0.85);
             transition: var(--transition-smooth);
         }
@@ -1829,8 +1835,8 @@ $companies = [
 
                 <div class="marquee-container">
                     <div class="marquee-track">
-                        <!-- Loop through companies twice to enable seamless scroll looping -->
                         <?php foreach (array_merge($companies, $companies) as $company): ?>
+                            <?php if (stripos($company['name'], 'jwimps') !== false) continue; ?>
                             <div class="marquee-logo-card">
                                 <img src="<?= $company['logo_url'] ?>"
                                     alt="<?= htmlspecialchars($company['name']) ?> Logo" />

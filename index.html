@@ -581,7 +581,7 @@
             display: flex;
             gap: 3rem;
             width: max-content;
-            animation: marquee 22s linear infinite;
+            animation: marquee 33s linear infinite;
         }
 
         .marquee-container:hover .marquee-track {
@@ -601,18 +601,22 @@
         .marquee-logo-card {
             background: var(--bg-surface);
             border: 1px solid var(--border-muted);
-            padding: 1.5rem 2.5rem;
+            padding: 1.5rem 2rem;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            gap: 1.25rem;
+            justify-content: center;
+            gap: 0.75rem;
             font-family: 'Outfit', sans-serif;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             font-weight: 700;
             letter-spacing: 0.05em;
             text-transform: uppercase;
             color: var(--text-secondary);
             transition: var(--transition-smooth);
             user-select: none;
+            min-width: 200px;
+            text-align: center;
         }
 
         .marquee-logo-card:hover {
@@ -622,8 +626,10 @@
         }
 
         .marquee-logo-card img {
-            height: 24px;
+            height: 32px;
+            max-width: 150px;
             width: auto;
+            object-fit: contain;
             filter: grayscale(1) brightness(0.85);
             transition: var(--transition-smooth);
         }
@@ -1680,58 +1686,47 @@
 
                 <div class="marquee-container">
                     <div class="marquee-track">
-                        <!-- Loop through companies twice to enable seamless scroll looping -->
-                                                    <div class="marquee-logo-card">
-                                <img src="https://cdn.svgporn.com/logos/google-cloud.svg"
-                                    alt="CloudTech, Dubai Logo" />
-                                <span>CloudTech</span>
+                                                                                <div class="marquee-logo-card">
+                                <img src="https://cloudtechnexus.ae/storage/CloudTech_Logo.png"
+                                    alt="CloudTech Nexus, Dubai Logo" />
+                                <span>CloudTech Nexus</span>
                             </div>
-                                                    <div class="marquee-logo-card">
-                                <img src="https://cdn.svgporn.com/logos/laravel.svg"
+                                                                                <div class="marquee-logo-card">
+                                <img src="https://dubai-immo.com/wp-content/uploads/2023/04/leos-dubai-logo.jpeg"
                                     alt="LEOS International Group, Dubai Logo" />
                                 <span>LEOS International Group</span>
                             </div>
-                                                    <div class="marquee-logo-card">
-                                <img src="https://cdn.svgporn.com/logos/wordpress-icon.svg"
+                                                                                <div class="marquee-logo-card">
+                                <img src="https://falconcity.com/wp-content/uploads/2020/01/falcon-logo-web-retina.png"
                                     alt="Falconcity of Wonders, Dubai Logo" />
                                 <span>Falconcity of Wonders</span>
                             </div>
-                                                    <div class="marquee-logo-card">
-                                <img src="https://cdn.svgporn.com/logos/zend.svg"
+                                                                                <div class="marquee-logo-card">
+                                <img src="https://www.menora.co.uk/wp-content/themes/menora/assets/images/menora-logo.png"
                                     alt="Menora Software, India Logo" />
                                 <span>Menora Software</span>
                             </div>
-                                                    <div class="marquee-logo-card">
-                                <img src="https://cdn.svgporn.com/logos/magento.svg"
-                                    alt="Jwimps Innovations, India Logo" />
-                                <span>Jwimps Innovations</span>
+                                                                                                            <div class="marquee-logo-card">
+                                <img src="https://cloudtechnexus.ae/storage/CloudTech_Logo.png"
+                                    alt="CloudTech Nexus, Dubai Logo" />
+                                <span>CloudTech Nexus</span>
                             </div>
-                                                    <div class="marquee-logo-card">
-                                <img src="https://cdn.svgporn.com/logos/google-cloud.svg"
-                                    alt="CloudTech, Dubai Logo" />
-                                <span>CloudTech</span>
-                            </div>
-                                                    <div class="marquee-logo-card">
-                                <img src="https://cdn.svgporn.com/logos/laravel.svg"
+                                                                                <div class="marquee-logo-card">
+                                <img src="https://dubai-immo.com/wp-content/uploads/2023/04/leos-dubai-logo.jpeg"
                                     alt="LEOS International Group, Dubai Logo" />
                                 <span>LEOS International Group</span>
                             </div>
-                                                    <div class="marquee-logo-card">
-                                <img src="https://cdn.svgporn.com/logos/wordpress-icon.svg"
+                                                                                <div class="marquee-logo-card">
+                                <img src="https://falconcity.com/wp-content/uploads/2020/01/falcon-logo-web-retina.png"
                                     alt="Falconcity of Wonders, Dubai Logo" />
                                 <span>Falconcity of Wonders</span>
                             </div>
-                                                    <div class="marquee-logo-card">
-                                <img src="https://cdn.svgporn.com/logos/zend.svg"
+                                                                                <div class="marquee-logo-card">
+                                <img src="https://www.menora.co.uk/wp-content/themes/menora/assets/images/menora-logo.png"
                                     alt="Menora Software, India Logo" />
                                 <span>Menora Software</span>
                             </div>
-                                                    <div class="marquee-logo-card">
-                                <img src="https://cdn.svgporn.com/logos/magento.svg"
-                                    alt="Jwimps Innovations, India Logo" />
-                                <span>Jwimps Innovations</span>
-                            </div>
-                                            </div>
+                                                                        </div>
                 </div>
             </section>
 
@@ -2332,7 +2327,7 @@
                             <div class="exp-body">
                                 <div class="exp-meta">
                                     <h3 class="exp-title">Senior Full Stack Developer</h3>
-                                    <h4 class="exp-company">CloudTech, Dubai</h4>
+                                    <h4 class="exp-company">CloudTech Nexus, Dubai</h4>
                                 </div>
                                 <ul class="exp-tasks">
                                                                             <li>Architecting and optimizing enterprise cloud application portals using Laravel and high-performance relational databases.</li>
