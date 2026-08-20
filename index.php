@@ -67,6 +67,9 @@ $skills = [
 ];
 
 $works = [
+    ["name" => "Watchpoint 24", "img" => "img-watchpoint24.png", "cat" => "tw,la", "href" => "https://watchpoint24.ae", "year" => "2025", "stack" => ["Laravel", "Tailwind", "SEO"], "desc" => "Security monitoring and operational surveillance management service platform."],
+    ["name" => "Cinema Al Zahra", "img" => "img-cinema-alzahra.png", "cat" => "bt,php", "href" => "http://cinema-alzahra.com", "year" => "2025", "stack" => ["Bootstrap", "PHP", "SEO"], "desc" => "Official web portal and screening showcase for Cinema Al Zahra."],
+    ["name" => "CloudTech Nexus", "img" => "img-cloudtechnexus.png", "cat" => "tw,la", "href" => "https://cloudtechnexus.ae/", "year" => "2026", "stack" => ["Laravel", "Tailwind", "SEO"], "desc" => "Official corporate web application for CloudTech Nexus showcasing IT infrastructure and digital solutions."],
     ["name" => "Promotion Pages", "img" => "promotions-img-1.webp", "cat" => "tw,la", "href" => "https://promotions.leosdevelopments.com/knightsbridge-brown/", "year" => "2024", "stack" => ["Laravel", "Tailwind", "SEO"], "desc" => "Custom high-performance marketing landing pages engineered for high lead-conversion ratios."],
     ["name" => "Central Pacific One", "img" => "img-cpo-1.png", "cat" => "tw,la", "href" => "https://centralpacificone.com/", "year" => "2024", "stack" => ["Laravel", "Tailwind", "SEO"], "desc" => "A robust real estate investment framework built on Laravel with an integrated CMS engine.", "other_imgs" => ["img-cpo-2.png", "img-cpo-3.png", "img-cpo-4.png", "img-cpo-5.png"]],
     ["name" => "Design LUD", "img" => "img-lud-01.png", "cat" => "wp", "href" => "https://designlud.com/", "year" => "2024", "stack" => ["WordPress", "SEO"], "desc" => "High-end architecture & interior design portfolio site featuring interactive galleries.", "other_imgs" => ["img-lud-02.png", "img-lud-03.png"]],

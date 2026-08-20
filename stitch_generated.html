@@ -1,273 +1,536 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>EUGINE JOSEPH - Portfolio</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "on-secondary-container": "#b5b5b5",
-                        "surface-container-high": "#2a2a2a",
-                        "border-subtle": "#222222",
-                        "surface-dark": "#000000",
-                        "on-tertiary-fixed-variant": "#454747",
-                        "error": "#ffb4ab",
-                        "surface-tint": "#c6c6c7",
-                        "tertiary-fixed": "#e2e2e2",
-                        "primary-container": "#e2e2e2",
-                        "primary": "#ffffff",
-                        "on-tertiary-container": "#636565",
-                        "secondary-container": "#464747",
-                        "on-secondary": "#303031",
-                        "tertiary-container": "#e2e2e2",
-                        "on-surface": "#e5e2e1",
-                        "on-secondary-fixed-variant": "#464747",
-                        "on-primary-container": "#636565",
-                        "on-background": "#e5e2e1",
-                        "secondary": "#c7c6c6",
-                        "surface-container": "#201f1f",
-                        "secondary-fixed": "#e3e2e2",
-                        "on-primary-fixed-variant": "#454747",
-                        "surface-container-low": "#1c1b1b",
-                        "outline": "#8e9192",
-                        "surface-container-highest": "#353534",
-                        "on-secondary-fixed": "#1b1c1c",
-                        "on-error-container": "#ffdad6",
-                        "on-tertiary-fixed": "#1a1c1c",
-                        "on-tertiary": "#2f3131",
-                        "tertiary-fixed-dim": "#c6c6c7",
-                        "on-error": "#690005",
-                        "error-container": "#93000a",
-                        "background": "#0a0a0a",
-                        "surface-dim": "#131313",
-                        "outline-variant": "#444748",
-                        "inverse-primary": "#5d5f5f",
-                        "surface-card": "#111111",
-                        "inverse-on-surface": "#313030",
-                        "surface-bright": "#3a3939",
-                        "surface-container-lowest": "#0e0e0e",
-                        "tertiary": "#ffffff",
-                        "surface-variant": "#353534",
-                        "primary-fixed-dim": "#c6c6c7",
-                        "primary-fixed": "#e2e2e2",
-                        "inverse-surface": "#e5e2e1",
-                        "on-primary": "#2f3131",
-                        "on-primary-fixed": "#1a1c1c",
-                        "on-surface-variant": "#c4c7c8",
-                        "surface": "#131313",
-                        "secondary-fixed-dim": "#c7c6c6"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "margin-page": "4rem",
-                        "margin-mobile": "1.5rem",
-                        "gutter": "2rem",
-                        "stack-gap": "1rem",
-                        "content-width": "75%",
-                        "sidebar-width": "25%"
-                    },
-                    "fontFamily": {
-                        "headline-md": ["Playfair Display"],
-                        "label-sm": ["Outfit"],
-                        "body-lg": ["Outfit"],
-                        "body-md": ["Outfit"],
-                        "display-lg-mobile": ["Playfair Display"],
-                        "title-lg": ["Outfit"],
-                        "display-lg": ["Playfair Display"]
-                    },
-                    "fontSize": {
-                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
-                        "label-sm": ["12px", { "lineHeight": "1.4", "letterSpacing": "0.1em", "fontWeight": "600" }],
-                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "300" }],
-                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "700" }],
-                        "title-lg": ["20px", { "lineHeight": "1.5", "letterSpacing": "0.05em", "fontWeight": "500" }],
-                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "0.02em", "fontWeight": "700" }]
-                    }
-                }
-            }
-        }
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>EUGINE JOSEPH - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-container": "#b5b5b5",
+              "surface-container-high": "#2a2a2a",
+              "border-subtle": "#222222",
+              "surface-dark": "#000000",
+              "on-tertiary-fixed-variant": "#454747",
+              error: "#ffb4ab",
+              "surface-tint": "#c6c6c7",
+              "tertiary-fixed": "#e2e2e2",
+              "primary-container": "#e2e2e2",
+              primary: "#ffffff",
+              "on-tertiary-container": "#636565",
+              "secondary-container": "#464747",
+              "on-secondary": "#303031",
+              "tertiary-container": "#e2e2e2",
+              "on-surface": "#e5e2e1",
+              "on-secondary-fixed-variant": "#464747",
+              "on-primary-container": "#636565",
+              "on-background": "#e5e2e1",
+              secondary: "#c7c6c6",
+              "surface-container": "#201f1f",
+              "secondary-fixed": "#e3e2e2",
+              "on-primary-fixed-variant": "#454747",
+              "surface-container-low": "#1c1b1b",
+              outline: "#8e9192",
+              "surface-container-highest": "#353534",
+              "on-secondary-fixed": "#1b1c1c",
+              "on-error-container": "#ffdad6",
+              "on-tertiary-fixed": "#1a1c1c",
+              "on-tertiary": "#2f3131",
+              "tertiary-fixed-dim": "#c6c6c7",
+              "on-error": "#690005",
+              "error-container": "#93000a",
+              background: "#0a0a0a",
+              "surface-dim": "#131313",
+              "outline-variant": "#444748",
+              "inverse-primary": "#5d5f5f",
+              "surface-card": "#111111",
+              "inverse-on-surface": "#313030",
+              "surface-bright": "#3a3939",
+              "surface-container-lowest": "#0e0e0e",
+              tertiary: "#ffffff",
+              "surface-variant": "#353534",
+              "primary-fixed-dim": "#c6c6c7",
+              "primary-fixed": "#e2e2e2",
+              "inverse-surface": "#e5e2e1",
+              "on-primary": "#2f3131",
+              "on-primary-fixed": "#1a1c1c",
+              "on-surface-variant": "#c4c7c8",
+              surface: "#131313",
+              "secondary-fixed-dim": "#c7c6c6",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "margin-page": "4rem",
+              "margin-mobile": "1.5rem",
+              gutter: "2rem",
+              "stack-gap": "1rem",
+              "content-width": "75%",
+              "sidebar-width": "25%",
+            },
+            fontFamily: {
+              "headline-md": ["Playfair Display"],
+              "label-sm": ["Outfit"],
+              "body-lg": ["Outfit"],
+              "body-md": ["Outfit"],
+              "display-lg-mobile": ["Playfair Display"],
+              "title-lg": ["Outfit"],
+              "display-lg": ["Playfair Display"],
+            },
+            fontSize: {
+              "headline-md": ["32px", { lineHeight: "1.3", fontWeight: "600" }],
+              "label-sm": [
+                "12px",
+                {
+                  lineHeight: "1.4",
+                  letterSpacing: "0.1em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "300" }],
+              "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+              "display-lg-mobile": [
+                "40px",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "title-lg": [
+                "20px",
+                {
+                  lineHeight: "1.5",
+                  letterSpacing: "0.05em",
+                  fontWeight: "500",
+                },
+              ],
+              "display-lg": [
+                "72px",
+                {
+                  lineHeight: "1.1",
+                  letterSpacing: "0.02em",
+                  fontWeight: "700",
+                },
+              ],
+            },
+          },
+        },
+      };
     </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
     </style>
-</head>
-<body class="bg-background text-on-surface font-body-md min-h-screen flex flex-col lg:flex-row antialiased selection:bg-surface-variant selection:text-primary">
-<!-- Top App Bar (Mobile) -->
-<header class="lg:hidden block sticky top-0 w-full z-50 bg-surface border-b border-border-subtle flex justify-between items-center px-margin-mobile py-4 transition-all duration-200">
-<div class="font-headline-md text-headline-md-mobile text-primary">ALEX RIVERA</div>
-<div class="flex gap-4">
-<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">menu</span>
-</div>
-</header>
-<!-- Side Navigation / Sidebar (Desktop) -->
-<aside class="w-full lg:w-sidebar-width bg-surface border-b lg:border-b-0 lg:border-r border-border-subtle flex flex-col p-margin-page gap-8 lg:fixed lg:left-0 lg:top-0 lg:h-screen overflow-y-auto">
-<div class="flex flex-col items-center lg:items-start gap-6">
-<div class="w-48 h-48 bg-surface-container-high border border-border-subtle shrink-0">
-<img alt="Professional headshot of the developer" class="w-full h-full object-cover grayscale opacity-80 hover:opacity-100 transition-opacity duration-500" data-alt="A stark, high-contrast black and white professional headshot of a male software engineer. He is looking directly at the camera with a serious, confident expression. The lighting is dramatic and architectural, casting deep shadows against a pure black background. The image has a grainy, raw texture typical of high-end editorial photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWH1uy_c8x_K1RNZFjTnpZd-PVab0m2t4bq0q9Hrkd8z5SkJSgxyRIAOg1hLASA9CfFhv7dyn2pjY_J7P7_Yc2CDNL427PjvLjj5uz_W2L6CbQVocPJw4zidQYdt_kZsLqmFzynofMHl4XTW8FJ3v0qWm8UnSoNoplXr26YUZItAgy5tQi562c0GLsdz1axQnS6Q9NeE3w037eBmENWYoqpfGdX1wNAGusw75JTNYcRCWdhUD9oCDMdLaY3-N1_B5n2d54-yRK4nUC"/>
-</div>
-<div class="text-center lg:text-left">
-<h1 class="font-display-lg text-display-lg lg:text-[48px] uppercase tracking-tighter text-primary leading-none mb-2">EUGINE JOSEPH</h1>
-<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Senior Full-Stack Engineer</p>
-</div>
-</div>
-<nav class="hidden lg:flex flex-col gap-4 mt-8 w-full">
-<div class="text-primary border-b border-primary pb-1 font-medium flex items-center justify-between group cursor-pointer">
-<span class="font-label-sm text-label-sm uppercase tracking-widest">Work</span>
-<span class="material-symbols-outlined text-[16px] opacity-100 transition-opacity">arrow_forward</span>
-</div>
-<div class="text-on-surface-variant font-normal flex items-center justify-between group cursor-pointer hover:text-primary transition-colors duration-300">
-<span class="font-label-sm text-label-sm uppercase tracking-widest">Experience</span>
-<span class="material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
-</div>
-<div class="text-on-surface-variant font-normal flex items-center justify-between group cursor-pointer hover:text-primary transition-colors duration-300">
-<span class="font-label-sm text-label-sm uppercase tracking-widest">Expertise</span>
-<span class="material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
-</div>
-<div class="text-on-surface-variant font-normal flex items-center justify-between group cursor-pointer hover:text-primary transition-colors duration-300">
-<span class="font-label-sm text-label-sm uppercase tracking-widest">Contact</span>
-<span class="material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
-</div>
-</nav>
-<div class="mt-auto hidden lg:flex flex-col gap-6 w-full pt-8 border-t border-border-subtle">
-<div class="flex flex-col gap-2">
-<h3 class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Profile</h3>
-<p class="font-body-sm text-sm text-on-surface-variant leading-relaxed opacity-70">
-                    Architecting scalable digital solutions with a focus on high-performance systems and austere UI design.
+  </head>
+  <body
+    class="bg-background text-on-surface font-body-md min-h-screen flex flex-col lg:flex-row antialiased selection:bg-surface-variant selection:text-primary"
+  >
+    <!-- Top App Bar (Mobile) -->
+    <header
+      class="lg:hidden block sticky top-0 w-full z-50 bg-surface border-b border-border-subtle flex justify-between items-center px-margin-mobile py-4 transition-all duration-200"
+    >
+      <div class="font-headline-md text-headline-md-mobile text-primary">
+        ALEX RIVERA
+      </div>
+      <div class="flex gap-4">
+        <span
+          class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors"
+          >menu</span
+        >
+      </div>
+    </header>
+    <!-- Side Navigation / Sidebar (Desktop) -->
+    <aside
+      class="w-full lg:w-sidebar-width bg-surface border-b lg:border-b-0 lg:border-r border-border-subtle flex flex-col p-margin-page gap-8 lg:fixed lg:left-0 lg:top-0 lg:h-screen overflow-y-auto"
+    >
+      <div class="flex flex-col items-center lg:items-start gap-6">
+        <div
+          class="w-48 h-48 bg-surface-container-high border border-border-subtle shrink-0"
+        >
+          <img
+            alt="Professional headshot of the developer"
+            class="w-full h-full object-cover grayscale opacity-80 hover:opacity-100 transition-opacity duration-500"
+            data-alt="A stark, high-contrast black and white professional headshot of a male software engineer. He is looking directly at the camera with a serious, confident expression. The lighting is dramatic and architectural, casting deep shadows against a pure black background. The image has a grainy, raw texture typical of high-end editorial photography."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWH1uy_c8x_K1RNZFjTnpZd-PVab0m2t4bq0q9Hrkd8z5SkJSgxyRIAOg1hLASA9CfFhv7dyn2pjY_J7P7_Yc2CDNL427PjvLjj5uz_W2L6CbQVocPJw4zidQYdt_kZsLqmFzynofMHl4XTW8FJ3v0qWm8UnSoNoplXr26YUZItAgy5tQi562c0GLsdz1axQnS6Q9NeE3w037eBmENWYoqpfGdX1wNAGusw75JTNYcRCWdhUD9oCDMdLaY3-N1_B5n2d54-yRK4nUC"
+          />
+        </div>
+        <div class="text-center lg:text-left">
+          <h1
+            class="font-display-lg text-display-lg lg:text-[48px] uppercase tracking-tighter text-primary leading-none mb-2"
+          >
+            EUGINE JOSEPH
+          </h1>
+          <p
+            class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest"
+          >
+            Senior Full-Stack Engineer
+          </p>
+        </div>
+      </div>
+      <nav class="hidden lg:flex flex-col gap-4 mt-8 w-full">
+        <div
+          class="text-primary border-b border-primary pb-1 font-medium flex items-center justify-between group cursor-pointer"
+        >
+          <span class="font-label-sm text-label-sm uppercase tracking-widest"
+            >Work</span
+          >
+          <span
+            class="material-symbols-outlined text-[16px] opacity-100 transition-opacity"
+            >arrow_forward</span
+          >
+        </div>
+        <div
+          class="text-on-surface-variant font-normal flex items-center justify-between group cursor-pointer hover:text-primary transition-colors duration-300"
+        >
+          <span class="font-label-sm text-label-sm uppercase tracking-widest"
+            >Experience</span
+          >
+          <span
+            class="material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity"
+            >arrow_forward</span
+          >
+        </div>
+        <div
+          class="text-on-surface-variant font-normal flex items-center justify-between group cursor-pointer hover:text-primary transition-colors duration-300"
+        >
+          <span class="font-label-sm text-label-sm uppercase tracking-widest"
+            >Expertise</span
+          >
+          <span
+            class="material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity"
+            >arrow_forward</span
+          >
+        </div>
+        <div
+          class="text-on-surface-variant font-normal flex items-center justify-between group cursor-pointer hover:text-primary transition-colors duration-300"
+        >
+          <span class="font-label-sm text-label-sm uppercase tracking-widest"
+            >Contact</span
+          >
+          <span
+            class="material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity"
+            >arrow_forward</span
+          >
+        </div>
+      </nav>
+      <div
+        class="mt-auto hidden lg:flex flex-col gap-6 w-full pt-8 border-t border-border-subtle"
+      >
+        <div class="flex flex-col gap-2">
+          <h3
+            class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest"
+          >
+            Profile
+          </h3>
+          <p
+            class="font-body-sm text-sm text-on-surface-variant leading-relaxed opacity-70"
+          >
+            Architecting scalable digital solutions with a focus on
+            high-performance systems and austere UI design.
+          </p>
+        </div>
+        <button
+          class="w-full py-3 border border-border-subtle text-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary hover:text-surface-dark transition-all duration-300 flex items-center justify-center gap-2"
+        >
+          <span class="material-symbols-outlined text-[16px]">download</span>
+          Download CV
+        </button>
+      </div>
+    </aside>
+    <!-- Main Content -->
+    <main
+      class="w-full lg:w-content-width lg:ml-[25%] p-margin-mobile lg:p-margin-page flex flex-col gap-24"
+    >
+      <!-- Featured Projects Section -->
+      <section>
+        <div
+          class="border-b border-border-subtle pb-4 mb-8 flex justify-between items-end"
+        >
+          <h2
+            class="font-headline-md text-headline-md text-primary tracking-tight"
+          >
+            FEATURED PROJECTS
+          </h2>
+          <div class="hidden md:flex gap-4">
+            <span
+              class="font-label-sm text-label-sm text-on-surface-variant cursor-pointer hover:text-primary transition-colors"
+              >← PREV</span
+            >
+            <span
+              class="font-label-sm text-label-sm text-on-surface-variant cursor-pointer hover:text-primary transition-colors"
+              >NEXT →</span
+            >
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Featured Project Card -->
+          <article
+            class="col-span-1 md:col-span-2 bg-surface-card border border-border-subtle group hover:border-primary transition-colors duration-500 overflow-hidden relative"
+          >
+            <div
+              class="aspect-video w-full bg-surface-container-high border-b border-border-subtle overflow-hidden relative"
+            >
+              <img
+                alt="Fintech Platform Dashboard"
+                class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-700 filter grayscale group-hover:grayscale-0"
+                data-alt="A sleek, high-contrast dark mode interface of a complex financial dashboard. The UI is austere, utilizing sharp 1px borders, dense data tables, and minimal geometric charts. The primary color palette is pure black, dark gray, with stark white typography and subtle muted accent lines. The perspective is a flat, straight-on screenshot meant for a high-end agency portfolio."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5QnIRx64OBcUnJKgf0ShTundgDxHX2cNng07NaCgKSmu6MKc92sylkgnUCrJpqamncL826PBBpFeApZhAqjAlCJEQave9vh9E9He6oBPWsUmO5aYIaSzPBcRWDi3A60hXoSfVL9fxOjUpazV5RdkJnQZhRasp-TXPWbvZ2h5GQsR6gIyAfy3xfRMUvN-kqKoRdRJSorTjLuJcxay0Z49ZXH3VaPo-xy0DV6b7T8PivpiHrRknHH9qyNN5LpJoIpuhgVDGegmpNiKd"
+              />
+            </div>
+            <div
+              class="p-8 flex flex-col md:flex-row justify-between items-start md:items-end gap-6"
+            >
+              <div>
+                <p
+                  class="font-label-sm text-label-sm text-on-surface-variant mb-2 tracking-widest"
+                >
+                  2023 / SYSTEM ARCHITECTURE
                 </p>
-</div>
-<button class="w-full py-3 border border-border-subtle text-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary hover:text-surface-dark transition-all duration-300 flex items-center justify-center gap-2">
-<span class="material-symbols-outlined text-[16px]">download</span>
-                Download CV
-            </button>
-</div>
-</aside>
-<!-- Main Content -->
-<main class="w-full lg:w-content-width lg:ml-[25%] p-margin-mobile lg:p-margin-page flex flex-col gap-24">
-<!-- Featured Projects Section -->
-<section>
-<div class="border-b border-border-subtle pb-4 mb-8 flex justify-between items-end">
-<h2 class="font-headline-md text-headline-md text-primary tracking-tight">FEATURED PROJECTS</h2>
-<div class="hidden md:flex gap-4">
-<span class="font-label-sm text-label-sm text-on-surface-variant cursor-pointer hover:text-primary transition-colors">← PREV</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant cursor-pointer hover:text-primary transition-colors">NEXT →</span>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<!-- Featured Project Card -->
-<article class="col-span-1 md:col-span-2 bg-surface-card border border-border-subtle group hover:border-primary transition-colors duration-500 overflow-hidden relative">
-<div class="aspect-video w-full bg-surface-container-high border-b border-border-subtle overflow-hidden relative">
-<img alt="Fintech Platform Dashboard" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-700 filter grayscale group-hover:grayscale-0" data-alt="A sleek, high-contrast dark mode interface of a complex financial dashboard. The UI is austere, utilizing sharp 1px borders, dense data tables, and minimal geometric charts. The primary color palette is pure black, dark gray, with stark white typography and subtle muted accent lines. The perspective is a flat, straight-on screenshot meant for a high-end agency portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5QnIRx64OBcUnJKgf0ShTundgDxHX2cNng07NaCgKSmu6MKc92sylkgnUCrJpqamncL826PBBpFeApZhAqjAlCJEQave9vh9E9He6oBPWsUmO5aYIaSzPBcRWDi3A60hXoSfVL9fxOjUpazV5RdkJnQZhRasp-TXPWbvZ2h5GQsR6gIyAfy3xfRMUvN-kqKoRdRJSorTjLuJcxay0Z49ZXH3VaPo-xy0DV6b7T8PivpiHrRknHH9qyNN5LpJoIpuhgVDGegmpNiKd"/>
-</div>
-<div class="p-8 flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
-<div>
-<p class="font-label-sm text-label-sm text-on-surface-variant mb-2 tracking-widest">2023 / SYSTEM ARCHITECTURE</p>
-<h3 class="font-title-lg text-title-lg text-primary mb-4 tracking-wide uppercase">PROJECT ALPHA</h3>
-<div class="flex gap-2 flex-wrap">
-<span class="px-2 py-1 border border-border-subtle font-label-sm text-[10px] text-on-surface-variant uppercase">React</span>
-<span class="px-2 py-1 border border-border-subtle font-label-sm text-[10px] text-on-surface-variant uppercase">Node.js</span>
-<span class="px-2 py-1 border border-border-subtle font-label-sm text-[10px] text-on-surface-variant uppercase">PostgreSQL</span>
-</div>
-</div>
-<a class="inline-flex items-center gap-2 font-label-sm text-label-sm text-primary uppercase tracking-widest border-b border-primary pb-1 hover:text-secondary transition-colors group-hover:border-secondary" href="#">
-                            View Project <span class="material-symbols-outlined text-[16px]">north_east</span>
-</a>
-</div>
-</article>
-<!-- Standard Project Card 1 -->
-<article class="bg-surface-card border border-border-subtle group hover:border-primary transition-colors duration-500">
-<div class="aspect-[4/3] w-full bg-surface-container-high border-b border-border-subtle overflow-hidden">
-<img alt="Data Visualization UI" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-700 filter grayscale group-hover:grayscale-0" data-alt="A minimalist dark mode data visualization interface showing a series of sharp, abstract geometric graphs and bar charts. The layout is structured with thin 1px white lines against a deep black background. The typography is monospaced and precise, conveying a sense of high-end analytical software design without any shadows or gradients." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHyhdJviaClk9XgZDi6jrEOkV177-WNvRo8GfBsgxmeqr10IDtNIX88Uy9thDYOWVv08Xe6ezPQ3rM0vOMBLUw7Hw8LvmvQewIibtzD-aDqYmg5TgRFvXkgZprQ9UfPGiDHa-91TegJTKHZRq1bb3JXYE-FzmTcPTRUHWl-qoIkGYz1-Rl-8ramqKMGC2HZZrbBUz1NOb8HOsEoZ878xdBMbqzYocObAF3gqjYfcPGMUBuyEA7ygZZC3B0R4_o7qO5mGHsOe2R3SBc"/>
-</div>
-<div class="p-6">
-<p class="font-label-sm text-label-sm text-on-surface-variant mb-2 tracking-widest">2022 / DATA VISUALIZATION</p>
-<h3 class="font-title-lg text-title-lg text-primary mb-4 tracking-wide uppercase">NEXUS DASHBOARD</h3>
-<a class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest group-hover:text-primary transition-colors" href="#">Details →</a>
-</div>
-</article>
-<!-- Standard Project Card 2 -->
-<article class="bg-surface-card border border-border-subtle group hover:border-primary transition-colors duration-500">
-<div class="aspect-[4/3] w-full bg-surface-container-high border-b border-border-subtle overflow-hidden">
-<img alt="E-commerce Architecture" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-700 filter grayscale group-hover:grayscale-0" data-alt="An abstract representation of e-commerce architecture. The image shows a sleek, dark mode wireframe or blueprint of a user flow, featuring stark white boxes, thin connecting lines, and tiny monospaced text labels on a pure black background. It feels technical, structural, and strictly minimalist, avoiding any colorful or illustrative elements." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPEg0Wr6-2oI-tST70EWOEbnKfP_JHFu8sHN9L0uoA9EdnVqPwL2a0M_5diQPDa9yyQ3atNC0Jm2piAOFwilgSpjyLfUmgIsQnzU-iT5U3Kf1xvTBZgNXs8y5I49_WX2Qbop0jHU7dtS5kAotfv5iPrsKkMAshEPnk-yn6F9kbQCoBDanulK9lsjNpFXz0kA34QwhysGJvKBKDmEyyj4tDhyXHJmp7NRjskgo3J-qGgKD8mK5cxja_kxKq-brH5OBDDXoxpwnIjuDK"/>
-</div>
-<div class="p-6">
-<p class="font-label-sm text-label-sm text-on-surface-variant mb-2 tracking-widest">2021 / E-COMMERCE</p>
-<h3 class="font-title-lg text-title-lg text-primary mb-4 tracking-wide uppercase">OBLIVION RETAIL</h3>
-<a class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest group-hover:text-primary transition-colors" href="#">Details →</a>
-</div>
-</article>
-</div>
-</section>
-<!-- Experience Section -->
-<section>
-<div class="border-b border-border-subtle pb-4 mb-12">
-<h2 class="font-headline-md text-headline-md text-primary tracking-tight">EXPERIENCE</h2>
-</div>
-<div class="flex flex-col gap-0">
-<!-- Experience Item 1 -->
-<div class="flex flex-col md:flex-row border-b border-border-subtle group relative">
-<div class="w-full md:w-[20%] py-6 md:py-8 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">
-                        2021 — Present
-                    </div>
-<div class="hidden md:flex w-[10%] justify-center relative">
-<div class="w-px h-full bg-border-subtle relative">
-<div class="absolute top-9 left-1/2 -translate-x-1/2 w-2 h-2 bg-primary border border-surface-dark transition-all duration-300 group-hover:scale-150"></div>
-</div>
-</div>
-<div class="w-full md:w-[70%] py-6 md:py-8 pl-0 md:pl-8">
-<h3 class="font-title-lg text-title-lg text-primary mb-1 uppercase tracking-wide">LEAD ENGINEER</h3>
-<p class="font-label-sm text-label-sm text-on-surface-variant mb-4 tracking-widest">MONOLITH AGENCIES</p>
-<ul class="font-body-md text-on-surface space-y-2 opacity-80 pl-4 border-l border-border-subtle">
-<li>Architected microservices infrastructure handling 10M+ daily requests.</li>
-<li>Led a team of 8 developers in delivering high-fidelity web experiences.</li>
-<li>Optimized core database queries reducing latency by 45%.</li>
-</ul>
-</div>
-</div>
-<!-- Experience Item 2 -->
-<div class="flex flex-col md:flex-row border-b border-border-subtle group relative">
-<div class="w-full md:w-[20%] py-6 md:py-8 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">
-                        2018 — 2021
-                    </div>
-<div class="hidden md:flex w-[10%] justify-center relative">
-<div class="w-px h-full bg-border-subtle relative">
-<div class="absolute top-9 left-1/2 -translate-x-1/2 w-2 h-2 bg-surface-container-high border border-border-subtle transition-all duration-300 group-hover:bg-primary group-hover:scale-150"></div>
-</div>
-</div>
-<div class="w-full md:w-[70%] py-6 md:py-8 pl-0 md:pl-8">
-<h3 class="font-title-lg text-title-lg text-primary mb-1 uppercase tracking-wide">SENIOR FRONTEND DEV</h3>
-<p class="font-label-sm text-label-sm text-on-surface-variant mb-4 tracking-widest">VOID STUDIO</p>
-<ul class="font-body-md text-on-surface space-y-2 opacity-80 pl-4 border-l border-border-subtle">
-<li>Developed intricate WebGL experiences for luxury brands.</li>
-<li>Established internal component libraries using React and Tailwind.</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full lg:w-[75%] lg:ml-[25%] px-margin-page py-gutter flex flex-col md:flex-row justify-between items-center border-t border-border-subtle bg-surface gap-4">
-<p class="font-label-sm text-label-sm text-on-surface-variant">© 2024 Built with Precision.</p>
-<div class="flex gap-6">
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Accessibility</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Source</a>
-</div>
-</footer>
-</body></html>
+                <h3
+                  class="font-title-lg text-title-lg text-primary mb-4 tracking-wide uppercase"
+                >
+                  PROJECT ALPHA
+                </h3>
+                <div class="flex gap-2 flex-wrap">
+                  <span
+                    class="px-2 py-1 border border-border-subtle font-label-sm text-[10px] text-on-surface-variant uppercase"
+                    >React</span
+                  >
+                  <span
+                    class="px-2 py-1 border border-border-subtle font-label-sm text-[10px] text-on-surface-variant uppercase"
+                    >Node.js</span
+                  >
+                  <span
+                    class="px-2 py-1 border border-border-subtle font-label-sm text-[10px] text-on-surface-variant uppercase"
+                    >PostgreSQL</span
+                  >
+                </div>
+              </div>
+              <a
+                class="inline-flex items-center gap-2 font-label-sm text-label-sm text-primary uppercase tracking-widest border-b border-primary pb-1 hover:text-secondary transition-colors group-hover:border-secondary"
+                href="#"
+              >
+                View Project
+                <span class="material-symbols-outlined text-[16px]"
+                  >north_east</span
+                >
+              </a>
+            </div>
+          </article>
+          <!-- Standard Project Card 1 -->
+          <article
+            class="bg-surface-card border border-border-subtle group hover:border-primary transition-colors duration-500"
+          >
+            <div
+              class="aspect-[4/3] w-full bg-surface-container-high border-b border-border-subtle overflow-hidden"
+            >
+              <img
+                alt="Data Visualization UI"
+                class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-700 filter grayscale group-hover:grayscale-0"
+                data-alt="A minimalist dark mode data visualization interface showing a series of sharp, abstract geometric graphs and bar charts. The layout is structured with thin 1px white lines against a deep black background. The typography is monospaced and precise, conveying a sense of high-end analytical software design without any shadows or gradients."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHyhdJviaClk9XgZDi6jrEOkV177-WNvRo8GfBsgxmeqr10IDtNIX88Uy9thDYOWVv08Xe6ezPQ3rM0vOMBLUw7Hw8LvmvQewIibtzD-aDqYmg5TgRFvXkgZprQ9UfPGiDHa-91TegJTKHZRq1bb3JXYE-FzmTcPTRUHWl-qoIkGYz1-Rl-8ramqKMGC2HZZrbBUz1NOb8HOsEoZ878xdBMbqzYocObAF3gqjYfcPGMUBuyEA7ygZZC3B0R4_o7qO5mGHsOe2R3SBc"
+              />
+            </div>
+            <div class="p-6">
+              <p
+                class="font-label-sm text-label-sm text-on-surface-variant mb-2 tracking-widest"
+              >
+                2022 / DATA VISUALIZATION
+              </p>
+              <h3
+                class="font-title-lg text-title-lg text-primary mb-4 tracking-wide uppercase"
+              >
+                NEXUS DASHBOARD
+              </h3>
+              <a
+                class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest group-hover:text-primary transition-colors"
+                href="#"
+                >Details →</a
+              >
+            </div>
+          </article>
+          <!-- Standard Project Card 2 -->
+          <article
+            class="bg-surface-card border border-border-subtle group hover:border-primary transition-colors duration-500"
+          >
+            <div
+              class="aspect-[4/3] w-full bg-surface-container-high border-b border-border-subtle overflow-hidden"
+            >
+              <img
+                alt="E-commerce Architecture"
+                class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-700 filter grayscale group-hover:grayscale-0"
+                data-alt="An abstract representation of e-commerce architecture. The image shows a sleek, dark mode wireframe or blueprint of a user flow, featuring stark white boxes, thin connecting lines, and tiny monospaced text labels on a pure black background. It feels technical, structural, and strictly minimalist, avoiding any colorful or illustrative elements."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPEg0Wr6-2oI-tST70EWOEbnKfP_JHFu8sHN9L0uoA9EdnVqPwL2a0M_5diQPDa9yyQ3atNC0Jm2piAOFwilgSpjyLfUmgIsQnzU-iT5U3Kf1xvTBZgNXs8y5I49_WX2Qbop0jHU7dtS5kAotfv5iPrsKkMAshEPnk-yn6F9kbQCoBDanulK9lsjNpFXz0kA34QwhysGJvKBKDmEyyj4tDhyXHJmp7NRjskgo3J-qGgKD8mK5cxja_kxKq-brH5OBDDXoxpwnIjuDK"
+              />
+            </div>
+            <div class="p-6">
+              <p
+                class="font-label-sm text-label-sm text-on-surface-variant mb-2 tracking-widest"
+              >
+                2021 / E-COMMERCE
+              </p>
+              <h3
+                class="font-title-lg text-title-lg text-primary mb-4 tracking-wide uppercase"
+              >
+                OBLIVION RETAIL
+              </h3>
+              <a
+                class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest group-hover:text-primary transition-colors"
+                href="#"
+                >Details →</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- Experience Section -->
+      <section>
+        <div class="border-b border-border-subtle pb-4 mb-12">
+          <h2
+            class="font-headline-md text-headline-md text-primary tracking-tight"
+          >
+            EXPERIENCE
+          </h2>
+        </div>
+        <div class="flex flex-col gap-0">
+          <!-- Experience Item 1 -->
+          <div
+            class="flex flex-col md:flex-row border-b border-border-subtle group relative"
+          >
+            <div
+              class="w-full md:w-[20%] py-6 md:py-8 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest"
+            >
+              2021 — Present
+            </div>
+            <div class="hidden md:flex w-[10%] justify-center relative">
+              <div class="w-px h-full bg-border-subtle relative">
+                <div
+                  class="absolute top-9 left-1/2 -translate-x-1/2 w-2 h-2 bg-primary border border-surface-dark transition-all duration-300 group-hover:scale-150"
+                ></div>
+              </div>
+            </div>
+            <div class="w-full md:w-[70%] py-6 md:py-8 pl-0 md:pl-8">
+              <h3
+                class="font-title-lg text-title-lg text-primary mb-1 uppercase tracking-wide"
+              >
+                LEAD ENGINEER
+              </h3>
+              <p
+                class="font-label-sm text-label-sm text-on-surface-variant mb-4 tracking-widest"
+              >
+                MONOLITH AGENCIES
+              </p>
+              <ul
+                class="font-body-md text-on-surface space-y-2 opacity-80 pl-4 border-l border-border-subtle"
+              >
+                <li>
+                  Architected microservices infrastructure handling 10M+ daily
+                  requests.
+                </li>
+                <li>
+                  Led a team of 8 developers in delivering high-fidelity web
+                  experiences.
+                </li>
+                <li>
+                  Optimized core database queries reducing latency by 45%.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Experience Item 2 -->
+          <div
+            class="flex flex-col md:flex-row border-b border-border-subtle group relative"
+          >
+            <div
+              class="w-full md:w-[20%] py-6 md:py-8 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest"
+            >
+              2018 — 2021
+            </div>
+            <div class="hidden md:flex w-[10%] justify-center relative">
+              <div class="w-px h-full bg-border-subtle relative">
+                <div
+                  class="absolute top-9 left-1/2 -translate-x-1/2 w-2 h-2 bg-surface-container-high border border-border-subtle transition-all duration-300 group-hover:bg-primary group-hover:scale-150"
+                ></div>
+              </div>
+            </div>
+            <div class="w-full md:w-[70%] py-6 md:py-8 pl-0 md:pl-8">
+              <h3
+                class="font-title-lg text-title-lg text-primary mb-1 uppercase tracking-wide"
+              >
+                SENIOR FRONTEND DEV
+              </h3>
+              <p
+                class="font-label-sm text-label-sm text-on-surface-variant mb-4 tracking-widest"
+              >
+                VOID STUDIO
+              </p>
+              <ul
+                class="font-body-md text-on-surface space-y-2 opacity-80 pl-4 border-l border-border-subtle"
+              >
+                <li>
+                  Developed intricate WebGL experiences for luxury brands.
+                </li>
+                <li>
+                  Established internal component libraries using React and
+                  Tailwind.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="w-full lg:w-[75%] lg:ml-[25%] px-margin-page py-gutter flex flex-col md:flex-row justify-between items-center border-t border-border-subtle bg-surface gap-4"
+    >
+      <p class="font-label-sm text-label-sm text-on-surface-variant">
+        © 2024 Built with Precision.
+      </p>
+      <div class="flex gap-6">
+        <a
+          class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors"
+          href="#"
+          >Privacy</a
+        >
+        <a
+          class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors"
+          href="#"
+          >Accessibility</a
+        >
+        <a
+          class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors"
+          href="#"
+          >Source</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
