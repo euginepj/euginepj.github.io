@@ -22,6 +22,7 @@
   },
   "scripts": {
     "build": "npx @tailwindcss/cli -i css/input.css -o css/output.css",
+    "build:html": "php index.php > index.html && prettier --write index.html",
     "watch": "npx @tailwindcss/cli -i css/input.css -o css/output.css --watch",
     "capture": "node scripts/capture-screenshot.js",
     "format": "prettier --write \"*.html\"",
