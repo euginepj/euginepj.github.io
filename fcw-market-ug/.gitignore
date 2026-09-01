@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE / OS artifacts
+nbproject/private/
+.DS_Store
+Thumbs.db

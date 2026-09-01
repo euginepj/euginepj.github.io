@@ -1,2 +1,5 @@
 patch.diff
+
+# Ignore node_modules in root and all sub-projects
 node_modules/
+**/node_modules/

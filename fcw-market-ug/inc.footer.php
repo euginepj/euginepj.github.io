@@ -33,22 +33,24 @@
    </div>
 </footer>
 
-<!-- JQuery -->
-<script type="text/javascript" src="node_modules/mdbootstrap/js/jquery-3.3.1.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
+<!-- JQuery 3.7.1 (upgraded from 3.3.1 for security) -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- Bootstrap tooltips (Popper.js) -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 <!-- MDB and Bootstrap core JavaScript -->
-<script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
-<!-- jarallax -->
-<script type="text/javascript" src="node_modules/jarallax/dist/jarallax.min.js"></script>
-<script type="text/javascript" src="node_modules/jarallax/dist/jarallax-element.min.js"></script>
-<!-- Wow -->
-<script type="text/javascript" src="node_modules/wowjs/dist/wow.min.js"></script>
-<!-- Owl Slider -->
-<script type="text/javascript" src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-<script type="text/javascript" src="node_modules/object-fit-images/dist/ofi.min.js"></script>
-<script type="text/javascript" src="node_modules/jquery.nicescroll/jquery.nicescroll.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.2/js/mdb.min.js"></script>
+<!-- Jarallax -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.8/jarallax.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.8/jarallax-element.min.js"></script>
+<!-- WOW.js -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<!-- Owl Carousel -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- Object Fit Images -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.min.js"></script>
+<!-- jQuery NiceScroll -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery.nicescroll@3.7.6/jquery.nicescroll.min.js"></script>
 
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript">
