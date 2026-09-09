@@ -90,7 +90,6 @@ euginepj.github.io/
 ├── video-bg/              # Background video assets
 ├── scripts/
 │   └── capture-screenshot.js  # Playwright screenshot utility
-├── fcw-market-ug/         # Sub-project: Falconcity Markets demo site
 ├── .github/
 │   └── workflows/
 │       └── static.yml     # GitHub Pages deploy workflow
